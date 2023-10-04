@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Formulario de registro. Mi Web</title>
+		<link rel="stylesheet" type="text/css" href="estilo.css">
+		<script src="validate.js"></script>
+	</head>
+	<body>
+		<h1>Formulario de registro - Mi Web</h1>
+		<form action=" " method="get" name="formulario" onsubmit="return validacion()">
+  			<label for="nombre">Nombre:</label><br>
+  			<input type="text" id="nombre" name="nombre" size="50" placeholder="Por ejemplo: Esteban" autofocus required><br>
+  			<label for="apellido">Apellidos:</label><br>
+  			<input type="text" id="apellido" name="apellido" placeholder="Por ejemplo: Quito" size="50" required><br><br>
+  			<label for="sexo">Sexo</label><br>
+  			<input type="radio" id="hombre" name="genero" value="hombre" required>
+  			<label for="hombre">Hombre</label><br>
+  			<input type="radio" id="mujer" name="genero" value="mujer" required>
+  			<label for="mujer">Mujer</label><br><br>
+  			<label for="correo">Correo Electrónico:</label><br>
+  			<input type="email" id="correo" name="correo" placeholder="usuario@dominio" required><br><br>
+  			<input type="checkbox" id="ver1" name="ver1" checked required>
+  			<label for="ver1">"Deseo recibir informacion sobre novedades y ofertas"</label><br><br>
+  			<input type="checkbox" id="ver2" name="ver2"required>
+  			<label for="ver2">"Declaro haber leído y aceptar las condiciones generales del programa y la normativa sobre protección de datos"</label><br><br>
+  			<label for="ciudad">Ciudad:</label>
+  			<select id="ciudad" name="ciudad" required>
+				<option value="">-Seleccionar-</option>
+    				<option value="1">Alicante</option>
+    				<option value="2">Sevilla</option>
+    				<option value="3">Madrid</option>
+    				<option value="4">Valencia</option>
+  			</select><br><br>
+  			<label for="descripcion">Descripción:<br>
+  			<textarea name="descripcion" cols="68" placeholder="ESCRIBA AQUI" ></textarea><br><br>
+  			<input type="submit" value="Enviar">
+  			<input type="reset" value="Restablecer">
+		</form>
+	</body>
+</html>
